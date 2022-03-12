@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilearnJavascript | Aprenda javascript!</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!--JS & jQuery-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/menu.png"/>
+        </div>
+        
+        <nav>
+            <div class="dropdown">
+                <img src="img/javascript.png"/>
+                <a href="index.html">
+                    <button class="main-menu">ilearnJavascript</button>
+                </a>
+
+                <div class="dropdown-child">
+                    <a href="sub/configuracaoInicial.html">configuração inicial</a>
+                    <a href="sub/introducao.html">introdução a programação</a>
+                    <a href="sub/moduloA.html">Módulo A</a>
+                    <a href="sub/moduloB.html">Módulo B</a>
+                    <a href="#">Módulo C</a>
+                    <a href="#">Módulo D</a>
+                    <a href="#">Módulo E</a>
+                    <a href="#">Projetos</a>
+                </div>
+            </div>
+
+            <ul>
+                <div class="box">
+                    <img src="img/exercicio.png"/>
+                    <a href="exercicios.html">
+                        <li class="exercises">Exercícios</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/exemplo.png"/>
+                    <a href="exemples.html">
+                        <li class="exemples">Exemplos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/projeto.png"/>
+                    <a href="projetos.html">
+                        <li class="projects">Projetos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/sobre.png"/>
+                    <a href="sobre.html">
+                        <li class="about">Sobre</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box-index">
+            <div class="box-img">
+                <img src="img/programacao.jpg" alt="imagem-programacao">
+            </div>
+
+            <div class="info">
+                <h1>Por que devo aprender javascript?</h1>
+                <p style="text-align: left; margin-top: 10px;">
+                    Javascript é o ponto de partida para criar interações dentro de um documento WEB,
+                    a grande esmagadora maioria dos sites presentes na internet hoje em dia faz o uso
+                    massivo dessa linguagem a fim de criar funções úteis ao público e funções que também
+                    atenda indiretamente o mesmo, como por exemplo, uma requisição de um dado dentro de
+                    um servidor, nesse caso muitas das tecnologias por parte do back-end conseguem fazer tal
+                    feito, mas todas sempre irão precisar do auxílio do javascript.
+                    <br><br>
+                    No mercado esse também é um diferencial que você pode ter no seu portifólio, algumas 
+                    empresas buscam candidatos que tenham conhecimento principalmente em HTML e CSS e alguma
+                    outra biblioteca, framework ou linguagem, e nessas empresas você pode sair na frente se 
+                    tiver conhecimento em javascript.
+                    <br><br>
+                    É uma linguagem de programação de alto-nível, isso significa que está mais voltado para o
+                    entendimento humano, portanto é mais fácil de se entender a liinguagem como um todo, é bastante
+                    requisitada no mercado e também não se limita somente ao Browser.
+                </p>
+            </div>
+        </section>
+
+        <section class="box-index">
+            <div class="box-img">
+                <img src="img/ferramenta.jpg" alt="imagem-ferramentas">
+            </div>
+
+            <div class="info">
+                <h1>O que preciso para começar?</h1>
+                <p style="text-align: left; margin-top: 10px;">
+                    Se você já teve contato com programação sabe que é necessário o uso de uma IDE 
+                    (Integrated Development Environment) ou em português "Ambiente de Desenvolvimento Integrado",
+                    para que possamos criar e compilar nossas aplicações. Como o próprio nome já diz, a IDE é o
+                    nosso ambiente de desenvolvimento, onde iremos inserir nossos comandos e compilá-los.
+                    <br><br>
+                    Durante o curso iremos utilizar o vscode, será a nossa IDE, você pode usar a que preferir, 
+                    existe outras opções como o Eclipse, NetBeans, Atom, Sublime etc... Isso é questão de gosto,
+                    mas fato é que a maioria das empresas usam o vscode, já se tornou a IDE padrão da maioria dos
+                    programadores, você pode baixar e instalar o vscode temos uma aula específica sobre isso.
+                    <br><br>
+                    Para compilar o nosso código nós vamos precisar configurar o node, baixando através do seu site
+                    oficial e utilizar uma extensão presente no vscode, chamada "Code Runner", para que seja possível
+                    compilar diretamente no terminal da nossa IDE.
+                </p>
+            </div>
+        </section>
+
+        <section class="box-tools">
+            <div class="box-img">
+                <img src="img/vscode.png" alt="imagem-vscode">
+            </div>
+
+            <div class="info">
+                <h1>Visual Studio Code</h1>
+                <p style="text-align: left; margin-top: 10px;">
+                    O <a href="https://code.visualstudio.com/" style="color: #dfdf04;">Visual Studio</a> Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, 
+                    Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, 
+                    realce de sintaxe, complementação inteligente de código, snippets e refatoração de código.
+                    <br><br>
+                    Visual Studio Code é de fácil instalação, ao baixar aceite os termos e prossiga normalmente com a instalação 
+                    clicando em "next" quando a instalação for finalizada ele será iniciado automaticamente exibindo uma tela inicial 
+                    de boas vindas, pronto, você já possui uma IDE para começar a programar.
+                </p>
+            </div>
+        </section>
+
+        <section class="box-tools">
+            <div class="box-img">
+                <img src="img/node.png" alt="imagem-node">
+            </div>
+
+            <div class="info">
+                <h1>Node</h1>
+                <p style="text-align: left; margin-top: 10px;">
+                    <a href="https://nodejs.org/en/" style="color: #dfdf04;">Node.js</a> é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que 
+                    permite a execução de códigos JavaScript fora de um navegador web.
+                    <br><br>
+                    O Node é o responsável por interpretar todas as nossas linhas de código e retornar um resultado
+                    com base no que fazemos, ele também pode ser usado como uma linguagem back-end para requisição de dados por 
+                    exemplo, pois funciona também tanto do lado do cliente quanto do lado do servidor. Sua instalação também é bem 
+                    simples, basta aceitar os termos e clicar em "next" concordando com todas as etapas. 
+                </p>
+            </div>
+        </section>
+
+        <section class="box-tools">
+            <div class="box-img">
+                <img src="img/run.png" alt="imagem-coderun">
+            </div>
+
+            <div class="info">
+                <h1>CodeRunner</h1>
+                <p style="text-align: left; margin-top: 10px;">
+                    <a href="https://coderunner.org.nz/" style="color: #dfdf04;">CodeRunner</a> é um plug-in de código aberto gratuito disponível na loja do vscode que pode executar código de 
+                    programa enviado por alunos em resposta a uma ampla variedade de perguntas de programação em muitas linguagens diferentes.
+                    Destina-se principalmente para uso em cursos de programação de computadores.
+                    <br><br> 
+                    Embora possa ser usado para classificar qualquer pergunta para a qual a resposta seja um texto. Os usuários experientes
+                    também podem apresentar aos usuários perguntas formatadas em HTML com JavaScript adicional; quase qualquer tipo de pergunta 
+                    pode ser resolvida usando esse recurso (consulte a interface do Html). O CodeRunner é normalmente usado no modo de teste.
+                </p>
+            </div>
+        </section>
+
+        <div class="social">
+            <a href="https://www.facebook.com/andersonlfb">
+                <img src="img/facebook.png" alt="icone-facebook">
+            </a>
+
+            <a href="https://twitter.com/AndersonLetw">
+                <img src="img/twitter.png" alt="icone-twitter">
+            </a>
+
+            <a href="https://www.linkedin.com/in/andersoncsql/">
+                <img src="img/linkedin.png" alt="icone-linkedin">
+            </a>
+
+            <a href="https://github.com/AndersonLeandrog">
+                <img src="img/git.png" alt="icone-git">
+            </a>
+        </div>
+    </main>
+
+    <div class="home">
+        <img src="img/seta.png" alt="imagem-home"/>
+    </div>
+</body>
+</html>

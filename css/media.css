@@ -1,0 +1,117 @@
+@media(min-width: 620px) {
+  main .box-page {
+    width: 90%;
+  }
+}
+
+@media(min-width: 1024px) {
+    header {
+      display: flex;
+    }
+
+      header #menu {
+        display: none;
+      }
+
+      header h1 {
+        display: block;
+      }
+
+      nav {
+        position: initial;
+        width: 640px;
+        height: 50px;
+        background: transparent;
+
+        display: flex;
+        justify-content: center;
+      }
+
+        nav ul {
+          width: 620px;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+            nav ul .box {
+              justify-content: center;
+            }
+
+            nav ul .box img {
+                display: none;
+            }
+
+        .dropdown {
+          width: 194px;
+          background: red;
+        }
+
+          .dropdown .main-menu {
+            color: #fff;
+            background: #181818;
+          }
+
+          .dropdown .dropdown-child {
+            display: none;
+            background: #181818;
+          }
+
+            .dropdown-child a {
+              padding: 8px;
+              color: #fff;
+            }
+
+          .dropdown img {
+            display: none;
+          }
+  
+    main .box-index, main .box-sobre, main .box-projeto {
+      width: 960px;
+      height: 500px;
+    }
+
+    main .box-tools {
+      width: 960px;
+      height: 265px;
+    }
+
+    main .box-exercises {
+      width: 960px;
+      height: 500px;
+    }
+
+      .box-tools .box-img, .box-img {
+        display: block;
+      }
+
+      .box-index .info, .box-sobre .info, .box-projeto .info {
+        width: 330px;
+        height: 500px;
+        box-sizing: unset;
+      }
+
+      .box-tools .info {
+        width: 630px;
+        height: 265px;
+        box-sizing: unset;
+      }
+
+    main .box-page {
+      width: 65%;
+      margin-right: 160px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+      .box-page .info {
+        width: 100%;
+        box-sizing: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+    main #topics {
+      display: block;
+    }
+}

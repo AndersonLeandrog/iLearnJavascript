@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilearnJavascript | Aprenda javascript!</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!--JS & jQuery-->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/menu.png"/>
+        </div>
+        
+        <nav>
+            <div class="dropdown">
+                <img src="../img/javascript.png"/>
+                <a href="../index.html">
+                    <button class="main-menu">ilearnJavascript</button>
+                </a>
+
+                <div class="dropdown-child">
+                    <a href="configuracaoInicial.html">configuração inicial</a>
+                    <a href="introducao.html">introdução a programação</a>
+                    <a href="moduloA.html">Módulo A</a>
+                    <a href="moduloB.html">Módulo B</a>
+                    <a href="#">Módulo C</a>
+                    <a href="#">Módulo D</a>
+                    <a href="#">Módulo E</a>
+                    <a href="#">Projetos</a>
+                </div>
+            </div>
+
+            <ul>
+                <div class="box">
+                    <img src="img/exercicio.png"/>
+                    <a href="../exercicios.html">
+                        <li class="exercises">Exercícios</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/exemplo.png"/>
+                    <a href="../exemples.html">
+                        <li class="exemples">Exemplos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/projeto.png"/>
+                    <a href="../projetos.html">
+                        <li class="projects">Projetos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/sobre.png"/>
+                    <a href="../sobre.html">
+                        <li class="about">Sobre</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box-page">
+            <div class="info">
+                <h1>Document</h1>
+                <p>
+                    Nessa terceira aula entenderemos um pouco o funcionamento de alguns métodos muito comuns usados na document,
+                    também vamos aprender a utilizar as caixas de mensagens, variáveis e os tipos de variáveis, incrementação e 
+                    decrementação.
+                    <br><br> 
+                    <i>"Para cada página carregada no browser, existe um objeto Document. A interface 
+                    Document serve como um ponto de entrada para o conteúdo da Página ( a árvore DOM, incluindo elementos como 
+                    body e table) e provê funcionalidades globais ao documento (como obter a URL da página e criar novos elementos 
+                    no documento)" -MDN Reference</i>
+                    <br><br>
+                    Em resumo document é a página em si, quando abrimos um site document se refere a tudo aquilo dentro e fora da nossa
+                    tag HTML como você mesmo pode ver, considerando que você já tenha certo entendimento de HTML não é difícil de entender 
+                    que os métodos que iremos estudar aqui serão casados com document e que portanto funcionarão somente com ele.
+                </p>
+
+                <img src="../img/dom.png" alt="arvore-dom">
+
+                <p>
+                    Como nas aulas anteriores não chegamos a usar o vscode, somente fizemos a configuração inicial, agora teremos que 
+                    criar uma pasta que será onde vamos armazenar os arquivos das aulas, então eu sugiro que você crie uma pasta na 
+                    área de trabalho e a renomeie como "Curso Javascript" ou o nome de sua preferência, é nessa pasta que iremos 
+                    criar todos os arquivos das aulas, então é importante que você reserve um espaço e deixe ela de fácil acesso 
+                    até para uma futura consulta caso venha a esquecer o conteúdo de algumas aulas.
+                    <br><br>
+                    Você pode abrir a pasta criada no vscode simplesmente entrando na pasta criada, na barra de endereços selecione 
+                    tudo, apague e digite "cmd", assim que o prompt de comando do windows abrir no endereço da pasta, basta digitar 
+                    o comando "code ." e aguardar a abertura da IDE. Assim que finalizar a abertura navegue até o explorer do vscode
+                    e pressione (CTRL + SHIFT + E), lá estará a sua pasta vazia, você pode clicar em cima dela e em seguida ir em "criar
+                    um novo arquivo", renomeie o arquivo para "document.js" e pressione (ENTER).
+                    <br><br>
+                    A Extensão padrão do javascript é ".js", arquivos javascript devem conter um nome adequado, nunca "2document.js" 
+                    usando um ou mais números no seu início, mas seria totalmente válido "document2.js" usando um número no final ou no meio 
+                    embora não seja recomendável, nunca use símbolos "@document.js" embora pode-se usar (_) Underline ou (-) Traçado no meio de
+                    palavras "my_document.js" ou ainda "my-document.js" e por fim, não use acentos, acentuação pode ser muito complicada
+                    especialmente quando precisamos citar esse arquivo dentro de um outro arquivo, então sem acento agudo, circunflexo, til...
+                    <br><br>
+                    <i>Document.write()</i>, esse é o nosso primeiro método em resumo ele retorna algo no navegador 
+                    direto na sua página, pode retornar um texto(string) contendo um símbolo qualquer, um número(number) tudo isso dentro 
+                    do nosso documento, esse é um dos métodos que podemos usar tendo document como referência. Cabe lembrar que ele só irá 
+                    retornar o resultado na página html, portanto você terá que criar um documento html tendo o arquivo javascript linkado 
+                    interna ou externamente, se você tentar executar o código abaixo no seu vscode pressionando (CTRL + ALT + N) provavelmente 
+                    vai se deparar com um erro.
+                </p>
+
+                <script async src="//jsfiddle.net/ma2drnz7/1/embed/js,result/dark/"></script>
+
+                <h1>Caixas de Mensagens</h1>
+                <p>
+                    Seguindo a mesma lógica em javascript também temos o que chamamos de caixa de mensagens, são elas respectivamente <i>alert(),
+                    confirm() e prompt()</i> o método alert é voltado para alertar o usuário que está visitando a sua página sobre algo, quando a 
+                    página é carregada é disparado uma mensagem para informar sobre o uso de cookies por exemplo, mas no geral pode ser utilizado 
+                    para alertar sobre qualquer coisa, sobre o uso de dados ou para solicitar qualquer outro acesso ao dispositivo do usuário.
+                    <br><br>
+                    Confirm é semelhante a alert, retorna uma mensagem em uma caixa de texto seguido de dois botões, que são o seu diferencial, "OK" e
+                    "Cancelar" e Prompt pode nos retornar um valor informado pelo usuário, inclusive podemos armazenar esse valor em uma variável,
+                    veja abaixo como funciona cada um desses métodos:  
+                </p>
+               
+                <script async src="//jsfiddle.net/ma2drnz7/2/embed/js,result/dark/"></script>
+
+                <p>
+                    Você pode clicar em "Result" na caixa de código acima e ver o comportamento de cada caixa de mensagem, enquanto na primeira, alert exibe uma 
+                    mensagem com o botão de confirmação, na segunda, confirm exibe a mesma caixa de mensagem com opção de confirmação e cancelamento e 
+                    por fim, na terceira e última temos que prompt exibe uma mensagem que contém uma caixa de texto por onde o usuário vai digitar um 
+                    retorno, vamos utilizar ainda nesse módulo o prompt no capítulo de variáveis.
+                </p>
+
+                <h1>Variáveis e constantes</h1>
+                <p>
+                    Todas as linguagens de programação possui uma maneira de declarar uma variável, variáveis são parte essencial de qualquer programa que
+                    você esteja desenvolvendo, a maioria senão todas as linguagens de programação faz o uso de variáveis, e o seu funcionamento é 
+                    muito simples, você pode imaginar uma mochila vazia e essa mochila têm a capacidade de armazenar um ou mais dados, você coloca 
+                    um livro dentro da mochila e pode usar aquele livro sempre que precisar, é assim que funciona uma variável, elas podem armazenar
+                    e retornar dados, e esses "dados" podem ser classificados em tipos, por exemplo: pode ser um dado em forma de texto, número,
+                    número flutuante, decisão etc...
+                    <br><br>
+                    Javascript, ao contrário de uma linguagem como C/C++ e Java possui uma maneira diferente de se declarar uma variável, normalmente
+                    nessas linguagens mais tipadas você deve declarar o tipo de variável antes mesmo de inicia-la com um valor, em C/C++ caso eu queira
+                    criar uma variável que armazene um número, um valor inteiro como 1, 2, 3 ou 4 eu preciso informar o tipo de variável, nome e eu posso
+                    armazenar ou não um valor dentro dela, [tipo] [nome] = [valor].
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/1/embed/js/dark/"></script>
+
+                <p>
+                    Como Javascript não é uma linguagem muito tipada nós temos uma certa liberdade para escolher com que dado queremos trabalhar, a sua sintaxe
+                    para criação de uma variável segue no mesmo sentido, primeiro temos que informar a nossa IDE que o que estamos escrevendo é uma variável e será
+                    interpretada como tal, para isso podemos utilizar o [var], toda variável precisa de um [nome] que virá em seguida, você pode ou não atribuir um [valor]
+                    e o valor é quem define o tipo de variável que você criou, veja como no exemplo abaixo.
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/9/embed/js/dark/"></script>
+                
+                <p>
+                    Os tipos de variáveis presentes em Javascript são: String (Texto), Number(Números Inteiros), Float(Números não inteiros, quebrados) e Boolean
+                    (Decisão, verdadeiro ou falso) temos outros tipos que não são o foco por enquanto, essas são as principais e as mais usadas, repare que todas
+                    as variáveis seguem o mesmo padrão tendo [var] [nome] o que diferencia uma da outra é o seu tipo, como foi atribuído um texto a primeira variável
+                    ela se tornou uma variável do tipo string, o mesmo ocorre para as outras que foram declaradas.
+                    <br><br>
+                    Agora no seu vscode, crie um arquivo chamado "Variaveis-e-Constantes.js", já aprendemos a como fazer isso, nesse arquivo você pode copiar o bloco
+                    de código abaixo e colar na sua IDE. Como desafio pode criar uma quinta variável entre idade e peso chamada "genero", que retorne um texto contendo
+                    um "M" de Masculino, todo texto para ser considerado uma string deve vir acompanhado de aspas simples ou duplas. 
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/10/embed/js/dark/"></script>
+
+                <p>
+                    Ok, se você foi capaz de resolver o desafio então saiba que acabou de criar e atribuir um valor a uma variável, aliás o símbolo de igualdade "=" 
+                    em javascript significa que você está atribuindo, A = B significa que eu estou atribuindo B a A. Ok, declaradas as variáveis como proceder para
+                    fazer o uso delas? Vamos usar o método alert() para retornar os valores.
+                    <br><br>
+                    No seu editor, abaixo das variáveis que você copiou e colou, faça uma quebra de linha com [ENTER] e retorne as variáveis a partir dos seus nomes 
+                    dentro de alert()
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/17/embed/js,result/dark/"></script>
+
+                <p>
+                    Conforme você viu o método alert nos retorna todos os dados, o funcionamento é bem simples você criou algumas variáveis e armazenou um valor para cada 
+                    uma delas, sabemos agora que alert retorna um texto ou número, mas também pode retornar uma variável que contenha ambos, tente o mesmo com o método 
+                    confirm() que aprendemos anteriormente.
+                    <br><br>
+                    Vamos tentar usar Prompt() dessa vez, você pode comentar a linha em que inserimos o alert, e logo abaixo chamar o método prompt passando um texto,
+                    para que fique claro o seu uso no exemplo abaixo é passada uma pergunta, o usuário deve inserir uma resposta quando o prompt for exibido na página.
+                    <br></br>
+                    Para se certificar que teremos a resposta do usuário, devemos armazenar essa resposta dentro de uma variável, logo definimos uma variável cujo seu 
+                    nome é "cor" e atribuímos prompt a ela, por sua vez prompt deve passar a resposta inserida do usuário para a variável.
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/22/embed/js,result/dark/"></script>
+
+                <p>
+                    até agora nós criamos o método e coletamos o seu retorno, inserindo dentro da variável "cor", podemos chamar a cor definida pelo usuário através do
+                    método write de document.write() basta passar o nome da variável para o método, como fizemos anteriormente utilizando alert.
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/27/embed/js,html,result/dark/"></script>
+
+                <p>
+                    Existem tipos de variáveis e formas de variáveis, podemos declarar uma variável com "var", "let" ou "const" e existe diferenças entre essas formas de se
+                    declarar uma variável, var é a maneira mais simples de se declarar uma variável, dessa maneira você pode usar tranquilamente e modificar o valor de var se 
+                    for preciso, let segue o mesmo caminho, porém pode se limitar em certos aspectos, por exemplo se você declarar uma variável dentro de um bloco de código, uma 
+                    função, o acesso a essa variável será limitado ao escopo desta função, por último temos as constantes ou const, como são declaradas, elas não podem ser modificadas
+                    e esse é o seu diferencial das duas últimas, quando se declara uma constante e se atribui um determinado valor a ela, esse valor não poderá ser modificado no decorrer
+                    do código, veja como funciona.
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/56/embed/js/dark/"></script>
+
+                <p>
+                    Perceba que eu estou acessando uma variável que foi declarada dentro de uma condição, ou seja, do escopo global tenho acesso a variável que está dentro do bloco de 
+                    condição, no seu escopo local. Posso retornar os valores dentro de console.log()
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/54/embed/js/dark/"></script>
+                <script async src="//jsfiddle.net/Anderson1lesv/hzdLp02k/58/embed/js/dark/"></script>
+
+                <p>
+                    Finalizando a parte de variáveis, esse tema é realmente muito complexo, essas são só as variáveis mais comuns de se trabalhar, como já foi dito aqui,
+                    não se apegue aos detalhes, procure entender somente o que foi proposto em aula.
+                </p>
+
+                <h1>Interpolação</h1>
+                <p>
+                    Já usamos a interpolação nos nossos exemplos anteriores, talvez você não tenha notado, mas já combinamos Strings literais (Strings 
+                    criadas sem o uso de variáveis) com variáveis em alguns casos, a interpolação é o que nos permite adicionar uma variável, chamada de função
+                    ou qualquer outra expressão compatível em uma String, essa funcionalidade foi implementada à partir da versão 6 do Javascript ES6 (ECMA Script 6).
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/fdLk3zup/1/embed/js,result/dark/"></script>
+
+                <p>
+                    Observe que estamos interpolando no conteúdo acima string literais como "possui" e "anos de idade" com as variáveis "usuario" e "idade",
+                    aqui estamos basicamente somando uma a outra, quando precisamos retornar uma mensagem que de alguma maneira precisa receber um dado qualquer
+                    utilizamos a interpolação, neste caso quando inserimos uma variável nesse contexto devemos inserir também um sinal de adição pois ele é o responsável
+                    por interpolar os valores.
+                    <br><br>
+                    Podemos interpolar uma função, trataremos sobre funções no próximo módulo de estudos, mas a interpolação de uma função se daria de maneira similar ao que 
+                    temos nesse exemplo:
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/fdLk3zup/8/embed/js,result/dark/"></script>
+
+                <p>
+                    Quando a função é chamada, passando [nome da função()] dentro do alert, ela retorna uma String "João e eu tenho 16 anos", parece um pouco desconexo
+                    mas quando interpolamos "Meu nome é" + função o resultado é: "Meu nome é João e eu tenho 16 anos" dessa maneira podemos chamar uma função que realiza
+                    determinado evento e retorna um resultado.
+                    <br><br>
+                    De maneira semelhante é possível retornar um bloco de código dentro do próprio alert ou de qualquer outra caixa de mensagem, você também pode retornar 
+                    retornar no console.
+                </p>
+
+                <h1>Incremento e Decremento</h1>
+                <p>
+                    Podemos incrementar uma variável que possua determinado valor, incrementos são muito utilizados quando queremos fazer um aplicativo que trabalhe com iterações,
+                    seu funcionamento é bem simples, observe o código abaixo:
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/pakje8rs/embed/js,result/dark/"></script>
+
+                <p>
+                    Observe que contador inicialmente vale zero, mas logo adiante utilizamos o operador de incremento '++' para a nossa variável, isso faz com que o valor de inicialmente
+                    zero, seja incrementado, isso é, passa a valer 1. Já no segundo exemplo criamos uma iteração onde setInterval executa um bloco de código a cada 500ms e sempre que o bloco
+                    é executado o contador é incrementado, quando o contador for incrementado 5 vezes o bloco não será mais executado.
+                    <br><br>
+                    Assim funciona o incremento de uma variável, inicialmente trabalhamos com variáveis que possuam um número, variáveis do tipo number ou float, mas também podemos 
+                    usar variáveis de texto, se quisermos que um nome seja impresso N quantidade de vezes por exemplo, o decremento é o inverso do incremento, ou seja levando em 
+                    consideração o mesmo exemplo acima, se trocarmos '++' por '--' o contador que inicialmente valia zero, passará a valer -1, e na iteração, logo abaixo, se trocarmos
+                    5 por -5 o bloco de código não será mais executado.
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/pakje8rs/4/embed/js,result/dark/"></script>
+
+                <h1>Linkando o Javascript (internamente)</h1>
+                <p>
+                    Existem duas formas de se trabalhar com javascript na nossa página, delas, podemos trabalhar de maneira em que linkamos ou indexamos o javascript através da tag 
+                    "script" diretamente no nosso documento html, dessa maneira estamos indexando todo o código javascript direto no nosso documento html, veja um exemplo logo abaixo.
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/tdjqe78x/1/embed/html,result/dark/"></script>
+
+                <p>
+                    Veja que escrevemos todo o código javascript dentro da tag script, dentro da tag body e o javascript irá funcionar para essa página em específico, caso você crie outra
+                    página html, você deverá fazer da mesma forma, linkando o javascript internamente, isto é, juntamente ao html usando a tag script. 
+                </p>
+
+                <h1>Linkando o Javascript (externamente)</h1>
+                <p>
+                    Quando temos um site ou até mesmo um aplicativo feito com javascript ou com qualquer outra framework que utilize javascript como base e por ventura esse site ou aplicativo 
+                    é muito extenso e possui um código muito grande, devemos pegar todo esse código e separar ele em um arquivo específico, um arquivo externo que só deve conter javascript e é
+                    ai que devemos linkar ele externamente, em um arquivo separado.
+                </p>
+
+                <script async src="//jsfiddle.net/AndersonLeandrog/tdjqe78x/6/embed/js,html,result/dark/"></script>
+
+                <p>
+                    Observe, aqui temos o mesmo exemplo que foi apresentado anteriormente, a sua diferença é que o javascript não está mais linkado diretamente no html e sim em um arquivo próprio
+                    externo chamado "script" com extensão ".js"
+                    <br><br>
+                    Para linkar em um arquivo externo devemos inserir, sempre dentro da tag head no html a tag script, passando o tipo de arquivo que queremos linkar e o local (onde se encontra o arquivo)
+                    no exemplo que foi dado, no html foi passado o tipo de arquivo, no caso estamos trabalhando com javascript portanto é passado "text/javascript" e em seguida o local onde se encontra este
+                    arquivo, isso não é novidade se você já trabalha com CSS, pois o mesmo utiliza do mesmo esquema para ser linkado tanto interna como externamente.
+                </p>
+            </div>
+        </section>
+
+        <ul id="topics">
+            <li>Document</li>
+            <li>Caixas de Mensagens</li>
+            <li>Variáveis e constantes</li>
+            <li>Interpolação</li>
+            <li>Incremento e Decremento</li>
+            <li>Linkando o Javascript (internamente)</li>
+            <li>Linkando o Javascript (externamente)</li>
+        </ul>
+    </main>
+
+    <div class="home">
+        <img src="../img/seta.png" alt="imagem-home"/>
+    </div>
+</body>
+</html>

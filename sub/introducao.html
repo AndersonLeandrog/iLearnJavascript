@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilearnJavascript | Aprenda javascript!</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!--JS & jQuery-->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/menu.png"/>
+        </div>
+        
+        <nav>
+            <div class="dropdown">
+                <img src="../img/javascript.png"/>
+                <a href="../index.html">
+                    <button class="main-menu">ilearnJavascript</button>
+                </a>
+
+                <div class="dropdown-child">
+                    <a href="configuracaoInicial.html">configuração inicial</a>
+                    <a href="introducao.html">introdução a programação</a>
+                    <a href="moduloA.html">Módulo A</a>
+                    <a href="moduloB.html">Módulo B</a>
+                    <a href="#">Módulo C</a>
+                    <a href="#">Módulo D</a>
+                    <a href="#">Módulo E</a>
+                    <a href="#">Projetos</a>
+                </div>
+            </div>
+
+            <ul>
+                <div class="box">
+                    <img src="img/exercicio.png"/>
+                    <a href="../exercicios.html">
+                        <li class="exercises">Exercícios</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/exemplo.png"/>
+                    <a href="../exemples.html">
+                        <li class="exemples">Exemplos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/projeto.png"/>
+                    <a href="../projetos.html">
+                        <li class="projects">Projetos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/sobre.png"/>
+                    <a href="../sobre.html">
+                        <li class="about">Sobre</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box-page">
+            <div class="info">
+                <h1>Introdução a programação</h1>
+                <p>
+                    Nessa segunda aula teremos uma breve introdução antes de começar a entender a como funciona o javascript, 
+                    vamos passar a entender um pouco mais sobre o vscode e como utilizar melhor essa ferramenta e também teremos 
+                    algumas dicas de extensões adicionais que irão facilitar ainda mais a nossa vida como programador. Percorreremos 
+                    também sobre alguns assuntos tais como sentenças de código, comentários, blocos de código, dados e por fim valores, 
+                    esse será o seu primeiro módulo do curso, aproveite!
+                </p>
+
+                <h1>Visual Studio Code</h1>
+                <p>
+                    Agora que você têm essa bela ferramenta instalada no seu computador, podemos configurar algumas coisinhas e compreender
+                    um pouco mais do seu funcionamento, ao abrir temos a tela inicial do programa, em "File" no canto superior esquerdo do 
+                    software, temos:
+
+                    <ul class="list">
+                        <li>New File - Criar um novo arquivo</li>
+                        <li>New Window - Abrir uma nova janela independente</li>
+                        <li>Open File/Folder - Abrir um arquivo ou pasta</li>
+                        <li>Open Workspace from file - Abrir uma pasta contendo varios arquivos</li>
+                        <li>Open Recent - Abrir um projeto recente</li>
+                    </ul>
+
+                    Essas são algumas das opções dentro de "File", ainda temos "Edit", "Select", "View", "Go", "Run", "Terminal" e "Help" e através desse último
+                    você pode obter as respostas para as opções anteriores, se quiser mudar o tema do seu vscode para um tema escuro que não prejudique
+                    a sua vista, basta ir em (File > Preferences > Color Theme) ou pressionar (ctrl + K) seguido de (ctrl + T), nesse momento abrirá uma nova
+                    janela e nela será exibida todos os temas disponíveis na sua IDE, basta selecionar a de sua preferência com enter. Particularmente
+                    eu uso uma extensão muito famosa que se chama Drácula, nada mais é do que um tema bonitinho com cores escuras e bem equilibradas que
+                    realça melhor as sintaxes, é uma mão na roda quando queremos identificar quem é quem dentro de um bloco de código muito vasto.
+                    <br><br>
+                    Para instalar uma extensão basta você acessar a aba Extensions que fica no canto esquerdo ou pressionar (ctrl + Shift + X) e na aba que 
+                    abrir, na barra de pesquisa procure por "dracula official" clique em cima dele e faça a sua instalação, para aplicar basta ir de novo
+                    em Color Themes e aplicar o tema Dracula, agora que você aprendeu a instalar uma extensão, podemos instalar uma última chamada "Live Server",
+                    antigamente, sempre que tinhamos que fazer uma alteração no código éramos obrigados a pressionar F5 na página para carregar as mudanças 
+                    mas hoje em dia, graças a essa extensão a página é atualizada automaticamente em tempo real, sempre que fazemos alguma alteração no código, 
+                    vamos usar muito essa extensão nos nossos projetos que irão envolver HTML e CSS. 
+                </p>
+
+                <img src="../img/vscode-dracula.png" alt="vscode-dracula">
+
+                <h1>Sentenças & Blocos de Código</h1>
+                <p>
+                    Cada linguagem de programação têm sua estruturação, uma forma de ser organizado, javascript é uma linguagem sensível nessa questão
+                    isso porque não existe um padrão fixo de estruturação de um código, por exemplo, em C++ temos uma estrutura parecida como esta, ela pode
+                    ser alterada, mas segue o padrão abaixo:
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/bxndv73a/5/embed/js/dark/"></script>
+
+                <p>
+                    onde primeiro, na linha um temos a definição de algumas bibliotecas que utilizamos no código, na quinta linha já temos a abertura da "main"
+                    que é onde inserimos a maior parte do código que forma o nosso programa, perceba que o nosso "Olá Mundo", assim como o retorno está inserido
+                    dentro das chaves {}
+                    <br><br>
+                    Javascript é organizado em sentenças e blocos de código, os blocos de código são agrupamentos de linhas de códigos ou sentenças como foi mostrado
+                    anteriormente na "main", temos um bloco de código, onde imprimos na tela um 'Olá Mundo!' que em seguida armazena um retorno e finaliza o programa.
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/bxndv73a/1/embed/js/dark/"></script>
+
+                <p>
+                    Se você já vem de outra linguagem como de C/C++, PHP, Java... Com certeza você já está acostumado a usar ponto e vírgula no final de cada sintaxe 
+                    do seu código, bem, no Javascript assim como no Phyton isso é opcional, você é quem decide se quer usar com ou sem ponto e vírgula, particularmente 
+                    não faço o uso, tento sempre deixar os meus códigos o mais simples possível, mas isso não é uma regra, muitos profissionais mantém o uso pelo 
+                    costume, pois eles já vêm de outras linguagens em que o uso é obrigatório e quando migram para Javascript preferem manter assim.
+                    <br><br>
+                    Não se apegue muito aos detalhes, essa é a nossa segunda aula, mantenha o foco apenas no que está sendo ensinado, tudo pode parecer bem nebuloso por enquanto
+                    mas no decorrer do curso tudo ficará muito bem claro, portanto é importante que você mantenha a atenção, leia e releia se possível, só assim você deve aprender.
+                </p>
+
+                <h1>Comentários</h1>
+                <p>
+                    Talvez você não tenha notado e isso é normal, mas dentro das linhas de código acima foi inserido alguns comentários para facilitar o seu entendimento sobre sentenças
+                    e blocos de códigos, assim como em toda linguagem, não seria diferente aqui, os comentários são parte essencial de um programa, sem eles com certeza tudo seria uma 
+                    bagunça, imagine você escrever um programa hoje e passado um mês você já nem está mais familiarizado com o seu próprio código, uma tragédia.
+                    <br><br>
+                    É por esse motivo que seu uso é importante, comentários em javascript podem ser feitos utilizando "//" barra + barra ou "/**/" barra, asterísco, asterísco e barra a diferença entre esses dois é que o primeiro serve 
+                    para comentar apenas uma linha e o último serve para comentar mais de uma linha como no exemplo abaixo:
+                </p>
+
+                <script async src="//jsfiddle.net/Anderson1lesv/bxndv73a/2/embed/js/dark/"></script>
+
+                <p>
+                    Você pode comentar um trecho de código e o trecho comentado não terá mais efeito no programa, porém tudo que estiver fora do comentário terá efeito, no exemplo acima 
+                    uma variável foi criada armazenando o nome "Paulo", logo abaixo, houve uma tentativa de alterar o nome para "Anderson", mas isso não vai funcionar pois essa linha está 
+                    comentada e não altera a variável criada, o que será imprimido no final é o nome "Paulo" e não "Anderson".
+                    <br><br>
+                    Uma última observação sobre comentários, existe uma regra a ser seguida, você só deve fazer comentários sucintos e necessários, nenhum programador precisa comentar a
+                    criação de uma variável por exemplo, "Essa é uma variável que armazena uma string", "Esse é um bloco de código que faz algo óbvio", comentários devem ser usados somente
+                    quando necessário e precisam ser objetivos, nada de criar longos textos para explicar algo quando se pode resumir em uma breve linha. Existe uma norma a seguir quando tratamos
+                    de comentários, você pode pesquisar um pouco mais a fundo sobre cada assunto aqui citado, neste curso disponibilizamos o básico. 
+                </p>
+            </div>
+        </section>
+
+        <ul id="topics">
+            <li>Introdução a programação</li>
+            <li>Visual Studio Code</li>
+            <li>Sentenças & Blocos de Código</li>
+            <li>Comentários</li>
+        </ul>
+    </main>
+
+    <div class="home">
+        <img src="../img/seta.png" alt="imagem-home"/>
+    </div>
+</body>
+</html>

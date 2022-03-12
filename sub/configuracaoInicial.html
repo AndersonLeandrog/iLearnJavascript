@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilearnJavascript | Aprenda javascript!</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!--JS & jQuery-->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/menu.png"/>
+        </div>
+        
+        <nav>
+            <div class="dropdown">
+                <img src="../img/javascript.png"/>
+                <a href="../index.html">
+                    <button class="main-menu">ilearnJavascript</button>
+                </a>
+
+                <div class="dropdown-child">
+                    <a href="configuracaoInicial.html">configuração inicial</a>
+                    <a href="introducao.html">introdução a programação</a>
+                    <a href="moduloA.html">Módulo A</a>
+                    <a href="moduloB.html">Módulo B</a>
+                    <a href="#">Módulo C</a>
+                    <a href="#">Módulo D</a>
+                    <a href="#">Módulo E</a>
+                    <a href="#">Projetos</a>
+                </div>
+            </div>
+
+            <ul>
+                <div class="box">
+                    <img src="img/exercicio.png"/>
+                    <a href="../exercicios.html">
+                        <li class="exercises">Exercícios</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/exemplo.png"/>
+                    <a href="../exemples.html">
+                        <li class="exemples">Exemplos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/projeto.png"/>
+                    <a href="../projetos.html">
+                        <li class="projects">Projetos</li>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <img src="img/sobre.png"/>
+                    <a href="../sobre.html">
+                        <li class="about">Sobre</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="box-page">
+            <div class="info">
+                <h1>Ambiente de desenvolvimento</h1>
+                <p>
+                    Seja bem vindo ao ilearnJavascript, nessa primeira parte iremos aprender a configurar o nosso ambiente 
+                    de desenvolvimento para que possamos dar início as nossas aulas, o ambiente de desenvolvimento é onde 
+                    iremos realizar as nossas aulas, mas ele também é onde todo programador, seja ele de javascript ou de 
+                    qualquer outra linguagem, pode criar suas aplicações para qualquer plataforma, muitos programadores usam 
+                    o vscode por exemplo, para criar aplicativos WEB com javascript, react, electronjs ou mobile com react 
+                    native, vue.js etc...
+                    <br><br> 
+                    Primeiro vamos precisar de uma IDE (Integrated Development Environment) ou Ambiente de Desenvolvimento Integrado,
+                    nesse caso, para o nosso curso vamos utilizar o VSCode, uma IDE simples, de fácil uso e completa que nos fornecerá 
+                    diversas extensões que serão capaz de facilitar o nosso dia a dia com a programação, as extensões no VSCode funcionam 
+                    da mesma maneira como no Google Chrome por exemplo, você baixa, a extensão é integrada ao navegador e por fim você 
+                    se utiliza daquele recurso.
+                    <br><br>
+                    Confira como fazer o download e a instalação do VSCode:<br><br>
+                    1. Abra o seu navegador e pesquise por "Visual Studio Code" ou clique 
+                    <a href="https://code.visualstudio.com/" target="_blank">aqui</a> para abrir diretamente o site.<br>
+                    2. Em seguida clique em "download for windows" certifique-se de instalar a versão correta para o seu sistema operacional,
+                    o processo de instalação pode ser um pouco diferente se você estiver de um <a href="encurtador.com.br/kmwNO" target="_blank">
+                    Mac ou Linux.</a>
+                </p>
+
+                <img src="../img/vscode-download.png" alt="vscode-download">
+
+                <p>
+                    3. Feito o download, aguarde até que ele se complete e em seguida execute o programa e assim que ele abrir aceite os 
+                    termos de uso e clique em Próximo.
+                </p>
+
+                <img src="../img/vscode-termos.png" alt="vscode-termos">
+
+                <p>
+                    4. Na próxima tela clique em Criar um atalho na área de trabalho essa caixa por padrão virá desmarcada, assim quando 
+                    o programa terminar de ser instalado você terá um ícone dele na sua área de trabalho do windows.
+                </p>
+
+                <img src="../img/vscode-atalho.png" alt="vscode-atalho">
+
+                <p>
+                    5. Por fim clique em instalar e aguarde até que o programa organize todos os arquivos de instalação no seu computador, 
+                    ao fim da instalação ele irá perguntar se você deseja abrir o programa, clique em abrir e deixe o vscode minimizado, 
+                    vamos agora fazer o download e a instalação do Node.
+                </p>
+
+                <img src="../img/vscode-instalar.png" alt="vscode-instalar">
+
+                <p>
+                    Nada será possível sem o Node, será o responsável por interpretar as nossas linhas de comando e retornar o que queremos,
+                    nesse caso ele funcionará para nós como um compilador e compiladores servem basicamente para isso, ler o que digitamos na IDE 
+                    e retornar uma resposta lógica baseado no que digitamos, ele será responsável por fazer essa interpretação.
+                    <br><br>
+                    A instalação do Node é semelhante a do vscode, abra a <a href="https://nodejs.org/en/" target="_blank">página de download</a>, 
+                    faça o download e instale normalmente, não há necessidade de nenhuma configuração adicional, basta fazer o download, sua instalação 
+                    e pronto! Combinado a isso iremos até o nosso vscode e vamos fazer o download, também de uma extensão chamada 
+                    <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank">Code Runner</a>, ela será 
+                    aliada ao Node, vai permitir que possamos executar os nossos comandos direto no terminal da IDE. 
+                </p>
+
+                <img src="../img/vscode-extensao.png" alt="vscode-extensao">
+
+                <p>
+                    No vscode você pode clicar na guia esquerda, no ícone destacado na imagem e em seguida ele irá abrir a página de extensões (você deve estar 
+                    conectado à internet) caso não apareça o code runner logo na página inicial, clique na barra de pesquisa e pesquise pela extensão e em seguida
+                    clique em install, aguarde a sua instalação e reinicie o vscode. Pronto, agora você têm o ambiente ideal para começarmos a estudar javascript.  
+                </p>
+
+                <iframe width="100%" height="420" src="https://www.youtube.com/embed/8W9roCKQR0U" title="yt-video" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+        <ul id="topics">
+            <li>Ambiente de desenvolvimento</li>
+        </ul>
+    </main>
+
+    <div class="home">
+        <img src="../img/seta.png" alt="imagem-home"/>
+    </div>
+</body>
+</html>
