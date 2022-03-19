@@ -65,6 +65,10 @@
             display: none;
           }
   
+    main .slide {
+      display: flex;
+    }
+
     main .box-index, main .box-sobre, main .box-projeto {
       width: 960px;
       height: 500px;

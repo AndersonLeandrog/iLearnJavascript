@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 420" enable-background="new 0 0 800 420" xml:space="preserve">
+<rect fill="#FCEE18" stroke="#000000" stroke-miterlimit="10" width="800" height="420"/>
+<text transform="matrix(1 0 0 1 22.5293 37.0586)" font-family="'ArialMT'" font-size="18">For</text>
+<g>
+	<text transform="matrix(1 0 0 1 275.3237 129.7939)" font-family="'ArialMT'" font-size="18">condição</text>
+	<text transform="matrix(1 0 0 1 295.1764 206.9998)" font-family="'ArialMT'" font-size="18">true</text>
+	<text transform="matrix(1 0 0 1 532.6768 127.1763)" font-family="'ArialMT'" font-size="18">false</text>
+	<text transform="matrix(1 0 0 1 221.6477 294.4992)" font-family="'ArialMT'" font-size="18">{executa o comando...}</text>
+	<text transform="matrix(1 0 0 1 488.5586 206.9998)" font-family="'ArialMT'" font-size="18">termina execução...</text>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="306.9" y1="137.9" x2="306.9" y2="184.2"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="306.9" y1="216.6" x2="306.9" y2="272.4"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="356.2" y1="123.2" x2="516.5" y2="123.2"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="551.1" y1="137.9" x2="551.1" y2="180.5"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="306.9" y1="307" x2="306.9" y2="331.3"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="306.9" y1="331.3" x2="196.6" y2="331.3"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="196.6" y1="331.3" x2="196.6" y2="92.3"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="196.6" y1="92.3" x2="306.9" y2="92.3"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="306.9" y1="92.3" x2="306.9" y2="107.7"/>
+	<text transform="matrix(1 0 0 1 148.853 213.6172)" font-family="'ArialMT'" font-size="18">loop</text>
+</g>
+</svg>

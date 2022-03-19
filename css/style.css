@@ -135,10 +135,43 @@ body {
         align-items: center;
       }
 
+        main .slide {
+          display: none;
+          position: relative;
+          width: 960px;
+          height: 320px;
+          margin-top: 30px;
+
+          justify-content: center;
+          align-items: flex-end;
+        }
+
+          .slide .content  {
+            position: absolute;
+            cursor: pointer;
+            width: 100%;
+            height: 80px;
+            background: rgb(24, 24, 24, 0.8);
+          }
+
+          .slide .content:hover {
+            background: rgb(24, 24, 24, 0.95);
+          }
+
+          .slide h1 {
+            padding: 10px 0px 0px 10px;
+            color: #fff;
+          }
+
+          .slide p {
+            padding: 5px 0px 0px 10px;
+            color: #fff;
+          }
+
         /*regula o layout da página principal(index)*/
         main .box-index {
           width: 300px;
-          margin: 50px 0px 25px 0px;
+          margin: 30px 0px 10px 0px;
           background: #000;
           color: #fff;
 

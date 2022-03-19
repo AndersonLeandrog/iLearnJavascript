@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    //troca de imagem ao selecionar o menu
+    //Troca de imagem ao selecionar o menu mobile
     let click = 0
     const t = 180
     $('#menu').click(() => {

@@ -12,11 +12,6 @@ window.onload = function(e) {
         })
     })
 
-
-    //Pega o elemento que foi clicado
-    //Percorre por todos os elementos h1 passando o conteúdo da função
-    //Na função ocorre uma verificação, se o texto html do trajeto clicado for igual ao da h1
-    //Pega a posição em relação ao eixoY da h1 e rola a página verticalmente até esse eixo
     $('body').click((e) => {
         let target = e.target
         $('h1').each(function(e, i) {
