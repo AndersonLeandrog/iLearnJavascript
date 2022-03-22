@@ -1,5 +1,4 @@
 window.addEventListener('load', () => {
-
     //Troca de imagem ao selecionar o menu mobile
     let click = 0
     const t = 180
