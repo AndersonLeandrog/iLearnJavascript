@@ -241,6 +241,19 @@ body {
             color: #fff;
           }
 
+            .box-exercises .info .labelFolder {
+              height: 25px;
+              display: flex;
+              align-items: flex-end;
+            }
+
+            .box-exercises .info .labelFile {
+              height: 25px;
+              margin: 5px 0px 10px 10px;
+              display: flex;
+              align-items: flex-end;
+            }
+
         /*regula o layout da página projetos(projects)*/
         main .box-projeto {
           width: 95%;
