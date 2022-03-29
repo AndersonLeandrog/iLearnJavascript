@@ -14,11 +14,6 @@ window.addEventListener('load', () => {
         }
     })
 
-    $(window).resize(() => {
-        window.innerWidth >= 1024? $('nav').show() : null
-    })
-
-
     //Exibe e oculta o menu de redes sociais
     $('.hideSocial').click(function() {
         click++
@@ -32,5 +27,9 @@ window.addEventListener('load', () => {
             $('.social a').show().fadeIn()
             click = 0
         }
+    })
+
+    $(window).resize(() => {
+        window.innerWidth >= 1024? $('nav').show() : null
     })
 })

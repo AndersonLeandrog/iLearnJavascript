@@ -1,10 +1,23 @@
-window.onload = function(e) {
-    //Volta ao topo da página
-    this.onscroll = function() {
-        $('.home').fadeIn(500).css('display', 'flex')
-    }
+userAsScrolled = false
 
-    $('.home').click(() => {
+window.onload = function(e) {
+
+    //Volta ao topo da página
+    //Terminar essa parte com scroll usando a data
+    setInterval(() => {
+        let userAsScrolled = false
+        window.onscroll = () => {
+            userAsScrolled = true
+        }
+
+        if(!userAsScrolled) {
+            $('#controls').css('display', 'flex').fadeIn(500)
+        } else {
+            $('#controls').hide().fadeOut(500)
+        }
+    }, 1000)
+
+    $('.icon-top').click(() => {
         this.scrollTo({
             top: 0,
             left: 0,

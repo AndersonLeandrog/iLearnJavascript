@@ -170,7 +170,7 @@ body {
 
         /*regula o layout da página principal(index)*/
         main .box-index {
-          width: 300px;
+          width: 95%;
           margin: 30px 0px 10px 0px;
           background: #000;
           color: #fff;
@@ -181,7 +181,6 @@ body {
         }
 
           .box-index .info {
-            height: 550px;
             background: #181818;
             color: #fff;
             padding: 15px;
@@ -190,7 +189,7 @@ body {
           }
         
         main .box-tools {
-          width: 300px;
+          width: 95%;
           margin: 50px 0px 25px 0px;
           background: #000;
           color: #fff;
@@ -222,7 +221,7 @@ body {
         /*regula o layout da página exercícios(exercises)*/
         main .box-exercises {
           display: none;
-          width: 300px;
+          width: 95%;
           margin: 50px 0px 50px 0px;
           background: transparent;
           color: #fff;
@@ -234,7 +233,6 @@ body {
 
           .box-exercises .info {
             width: 100%;
-            height: 550px;
             background: #181818;
 
             list-style: none;
@@ -245,7 +243,7 @@ body {
 
         /*regula o layout da página projetos(projects)*/
         main .box-projeto {
-          width: 300px;
+          width: 95%;
           margin-top: 50px;
 
           display: flex;
@@ -255,7 +253,7 @@ body {
 
         /*regula o layout da página sobre(about)*/
         main .box-sobre {
-          width: 300px;
+          width: 95%;
           margin: 50px 0px 50px 0px;
 
           display: flex;
@@ -275,7 +273,6 @@ body {
             }
 
           .box-sobre .info, .box-projeto .info {
-            height: 550px;
             background: #181818;
 
             list-style: none;
@@ -379,20 +376,42 @@ body {
           }
 
         /*layout do botão de home*/
-        .home {
-          cursor: pointer;
-          position: fixed;
+        #controls {
+          display: none;
+          position: fixed; 
           width: 50px;
-          height: 50px;
+          height: 105px;
           right: 15px;
           bottom: 15px;
-          border-radius: 50%;
-          background: #cece0b;
-    
-          display: none;
-          justify-content: center;
+
+          flex-direction: column;
+          justify-content: space-between;
           align-items: center;
         }
+
+          #controls .icon-top {
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #cece0b;
+      
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          #controls .icon-home {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #cece0b;
+      
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
         table  {
           width: 100%;
