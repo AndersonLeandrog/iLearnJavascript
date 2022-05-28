@@ -1,10 +1,15 @@
 window.addEventListener('load', () => {
     let i = 0
+
+    //terminar a iteração do botão
+    $('.next').click(() => {
+        i++
+    }) 
+
     function atualizarSlide() {
         i++
         let img = $('.slide img')
         let title = $('.slide h3')
-        //let largura = window.screen.width
 
         if(i === 1) {
             img.attr('src', 'img/slide3.png').fadeIn(500)
