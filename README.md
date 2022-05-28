@@ -4,7 +4,7 @@ iLearnJavascript é uma plataforma de ensino de Javascript, um projeto de aluno 
 ![Alt text](https://i.ibb.co/2ZB3kTh/img-site-01.png)
 ![Alt text](https://i.ibb.co/bmTd9kb/img-ste-02.png)
 ![Alt text](https://i.ibb.co/gV88WJq/img-site-03.png)
-[![Watch the video](https://i.ibb.co/zXr3twz/Sem-T-tulo-1.png)](https://www.youtube.com/watch?v=EN8j580buIE)
+[![Watch the video](https://i.ibb.co/1zTyGZv/capa-img.png)](https://www.youtube.com/watch?v=EN8j580buIE)
 
 **Pré-requisitos**
 - [x] Navegador com suporte a Javascript
